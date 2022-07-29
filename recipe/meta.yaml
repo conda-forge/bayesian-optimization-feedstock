@@ -1,18 +1,18 @@
 {% set name = "bayesian-optimization" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 67a7abbad1213961a992b5fc9e1f659c13ce9db28dc0cd920d3398ddc11da9d4
+  sha256: c2fd3af4b6cc24ee1c145295b2a900ffb9b455cad924e8185a8d5784712bc935
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
