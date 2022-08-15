@@ -146,7 +146,7 @@ In order to produce a uniquely identifiable distribution:
 
 Feedstock Maintainers
 =====================
-
+* [@bwheelz36](https://github.com/bwheelz36/)
 * [@till-m](https://github.com/till-m/)
 * [@volpatto](https://github.com/volpatto/)
 
