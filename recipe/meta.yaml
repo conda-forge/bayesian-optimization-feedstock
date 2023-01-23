@@ -10,20 +10,20 @@ source:
   sha256: 4e4e98cd0f0fb716202ea4c3b9e7c4c530270e69aa26f0eaf6ef715328f89c04
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - numpy >=1.9.0
     - python >=3.6
     - scikit-learn >=0.18.0
     - scipy >=0.14.0
-    - colorama
+    - colorama >=0.4.6
 
 test:
   imports:
