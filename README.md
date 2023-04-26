@@ -1,11 +1,11 @@
-About bayesian-optimization
-===========================
+About bayesian-optimization-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bayesian-optimization-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fmfn/BayesianOptimization
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bayesian-optimization-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pure Python implementation of bayesian global optimization with gaussian processes.
 
