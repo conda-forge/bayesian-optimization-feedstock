@@ -10,7 +10,7 @@ source:
   sha256: a83590b64b57a8e4508424629c817b1c41f89b76c9254dc60aa313505df389b0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
@@ -20,7 +20,7 @@ requirements:
     - python >=3.9, <4
     - poetry >=1.8.3, <2.0.0
   run:
-    - numpy >=1.9.0, <2.0.0
+    - numpy >=1.25
     - python >=3.9, <4
     - scikit-learn >=1.0.0, <2.0.0
     - scipy >=1.0.0, <2.0.0
