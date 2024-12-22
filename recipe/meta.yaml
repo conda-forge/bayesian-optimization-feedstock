@@ -10,23 +10,25 @@ source:
   sha256: 963b4714de800cef906be4275dbd9b797fb21756ddb5b537d3d6222c76e1e33d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.9, <4
+    - python {{ python_min }}
     - poetry >=1.8.3, <2.0.0
   run:
     - numpy >=1.25
-    - python >=3.9, <4
+    - python >={{ python_min }},<4
     - scikit-learn >=1.0.0, <2.0.0
     - scipy >=1.0.0, <2.0.0
     - colorama >=0.4.6, <1.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - bayes_opt
 
