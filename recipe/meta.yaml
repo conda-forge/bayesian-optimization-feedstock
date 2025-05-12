@@ -1,5 +1,5 @@
 {% set name = "bayesian-optimization" %}
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2fd4bff8b2e5dda2d658ab66b57a2f39e6dc2c36ba5489878e45499c732cdf44
+  sha256: 32e6d5631f0e68d3e76e75b6c44d03269ed38a2fd71e4478370499bdfaa2ddc1
 
 build:
   number: 0
