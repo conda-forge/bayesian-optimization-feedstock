@@ -20,13 +20,11 @@ requirements:
     - python {{ python_min }}
     - poetry-core >=2.0
   run:
-    - python >={{ python_min }}
-    - colorama >=0.4.6,<1.0.0
-    - scikit-learn >=1.0.0,<2.0.0
-    - numpy >=1.25    # [py<313]
-    - numpy >=2.1.3   # [py>=313]
-    - scipy >=1.0.0,<2.0.0  # [py<313]
-    - scipy >=1.14.1,<2.0.0  # [py>=313]
+    - numpy >=1.25
+    - python >={{ python_min }},<4
+    - scikit-learn >=1.0.0, <2.0.0
+    - scipy >=1.0.0, <2.0.0
+    - colorama >=0.4.6, <1.0.0
 
 test:
   requires:
