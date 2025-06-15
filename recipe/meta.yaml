@@ -1,5 +1,5 @@
 {% set name = "bayesian-optimization" %}
-{% set version = "2.0.4" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 32e6d5631f0e68d3e76e75b6c44d03269ed38a2fd71e4478370499bdfaa2ddc1
+  sha256: 194e8ac31f4c609079b2508765de5b144a86cd1390cdcf2b11aff58dbd9a3fd5
 
 build:
   number: 0
@@ -18,13 +18,14 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - poetry >=1.8.3, <2.0.0
+    - poetry-core >=2.0
   run:
     - numpy >=1.25
     - python >={{ python_min }},<4
     - scikit-learn >=1.0.0, <2.0.0
     - scipy >=1.0.0, <2.0.0
     - colorama >=0.4.6, <1.0.0
+    - packaging
 
 test:
   requires:
