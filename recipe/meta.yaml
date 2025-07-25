@@ -12,13 +12,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
+  script:
+    - '{{ PYTHON }} -m pip install uv '
+    - '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - uv
   run:
     - numpy >=1.25
     - python >={{ python_min }},<4
