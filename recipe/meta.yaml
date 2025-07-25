@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - conda-forge::uv
+    - uv
   run:
     - numpy >=1.25
     - python >={{ python_min }},<4
